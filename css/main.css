@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
 
-/* Initial Setup */
+/* <!-- ---- Initial/Setup ---- --> */
 :root{
     --lg-font: 'Kaisei Tokumin', serif;
     --sm-font: 'Poppins', sans-serif;
@@ -9,19 +9,19 @@
 body {
     font-family: var(--sm-font);
 }
-.btn:not(.nav-btn button) {
+.btn:not(.nav-btns button){
     background-color: white;
     color: rgb(85, 85, 85);
     padding: 10px 28px;
     border-radius: 25px;
     border: 1px solid rgb(85, 85, 85);
 }
-.btn:not(.nav-btn button):hover {
+.btn:not(.nav-btns button):hover{
     background: var(--pink);
     color: white;
     border: var(--pink);
 }
-.title h2::before {
+.title h2::before{
     position: absolute;
     content: "";
     width: 4px;
@@ -30,87 +30,81 @@ body {
     left: -20px;
     top: 50%;
     transform: translateY(-50%);
-
 }
-
-/* Navbar */
-.navbar-brand img {
+/* <!-- ---- Navbar ---- --> */
+.navbar-brand img{
     width: 30px;
 }
-#brand-name {
+#brand-name{
     letter-spacing: 2px;
     font-family: var(--lg-font);
 }
-.navbar {
-    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+.navbar{
+   box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1); 
 }
-.nav-item {
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
-}
-.nav-link:hover {
+.nav-link:hover{
     color: var(--pink) !important;
 }
-@media(min-width: 992px) {
-    .nav-item {
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+@media(min-width: 992px){
+    .nav-item{
         border-bottom: none;
     }
 }
-
-/* Hero */
-#hero {
+/* <!-- ---- Hero ---- --> */
+#hero{
     background: url(../images/banner-img-1.jpg) top/cover;
 }
-.carousel-inner h1 {
+.carousel-inner h1{
     font-size: 60px;
     font-family: var(--lg-font);
 }
-.carousel-item .btn {
-    border-color: white !important; 
+.carousel-item .btn{
+    border-color: white !important;
 }
-
-/* Collection */
-.active-filter-btn {
-    background: var(--pink) !important;
+/* <!-- ---- Collection ---- --> */
+.active-filter-btn{
+    background-color: var(--pink) !important;
     color: white !important;
     border-color: var(--pink) !important;
 }
-.collection-img span {
+.collection-img span{
     top: 20px;
     right: 20px;
     width: 46px;
     height: 46px;
     border-radius: 50%;
 }
-
-/* Specials */
-.special-img span {
+/* <!-- ---- Specials ---- --> */
+.special-img span{
     top: 20px;
     right: 20px;
 }
-.special-img:hover img {
+.special-img:hover img{
     transform: scale(1.2);
 }
-.special-img img {
+.special-img img{
     transition: all 0.3s ease;
 }
-
-/* Banner */
-#banner {
+/* <!-- ---- Banner ---- --> */
+#banner{
     background: url(../images/offer_img.jpg) center/cover;
 }
-#banner .row {
+#banner .row{
     min-height: 60vh;
 }
-.banner-content span {
+.banner-content span{
     font-size: 28px;
 }
-.banner-content h2 {
+.banner-content h2{
     font-size: 60px;
     font-family: var(--lg-font);
 }
 
 /* News Letter */
-#newletter p {
+#newsletter p {
     max-width: 600px;
 }
 #newsletter .input-group {
